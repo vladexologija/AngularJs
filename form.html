@@ -1,0 +1,31 @@
+<!doctype html>
+<html ng-app>
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
+    <script src="controller.js"></script>
+  </head>
+  <body>
+  	<h1>Enter your data</h1>
+  	<div ng-controller="Controller">
+  	<form name="form" novalidate>
+  		<input type="email" ng-model="user.email" placeholder="Your email" name="fieldEmail">
+  		<div ng-show="form.fieldEmail.$dirty && form.fieldEmail.$invalid">
+  			<span ng-show="form.emailField.$error.required">Email field is required</span>
+  			<span ng-show="from.emailField.$error.email">Enter valid email</span>
+  		</div>
+  		<input type="text" ng-model="user.name" placeholder="Your name">
+  		<br/>
+  		<input type="url" ng-mode="user.url" placeholder="Your website">
+  		<br/>
+  		Gender: 
+  		<input type="radio" ng-model="user.gender" value="male"> male
+  		<input type="radio" ng-model="user.gender" value="female"> female
+  		<br/>
+  		<button ng-click="update(user)" ng-disabled="form.$invalid || isUnchanged(user)">
+  			Save
+  		</button>
+  	</form>
+  	Your data: {{data}}
+  </div>
+  </body>
+</html>
