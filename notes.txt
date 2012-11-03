@@ -18,3 +18,22 @@ Filters
  	- filter, limitTo, orderBy
  	- currency, date, number
  	- uppercase, lowercase
+ 	- Filter for items with property like 'John'
+ 	- "item in items | filter :'John' "
+ 	- "item in items | filter :{ name: 'John'}"
+ 	- "item in items | filter : isLarge" - isLarge method in model
+
+Forms 
+	- form novalidate nem='aForm'
+	- input type='url' or type='email' required ng-model='hompage'
+	- buttn ng-disable-"!aFrom.$valid"
+	- ng-dirty / ng-pristine
+	- ng-valied / ng-invalid
+
+Utility Attributes
+- ng-model
+- ng-repeat
+- ng-controller
+- ng-hide & ng-show
+- ng-click & ng-mouse
+- ng-src
