@@ -99,6 +99,22 @@ ngResource
 
 		.controller('MailController', function(MailApi){
 			$scope.searchResult = MailApi.search({
-				name:'something'
+				email:'something@gmail.com'
 			});
 		});
+
+Routes and Views
+	- angular builtin mdoule
+	- neat API for sub-pages
+	- browser history aware
+		.config(function('$routeProvider'){
+			$routeProvider
+			.when('/',{
+				templateUrl: 'templates/frontPage.html'
+				controller: 'controllers/Controller'
+			})
+			.when('', {
+
+			})
+		});
+	- add ng-view to konow which part is being manipulated
