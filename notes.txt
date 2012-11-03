@@ -111,10 +111,11 @@ Routes and Views
 			$routeProvider
 			.when('/',{
 				templateUrl: 'templates/frontPage.html'
-				controller: 'controllers/Controller'
+				controller: 'ProductListController'
 			})
-			.when('', {
-
+			.when('/product/:productId', {
+				templateUrl: 'templates/product_detail.html',
+				controller: 'ProductDetailController'
 			})
 		});
 	- add ng-view to konow which part is being manipulated
