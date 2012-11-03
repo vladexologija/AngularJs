@@ -1,0 +1,20 @@
+The $scope object
+	-holds the date
+	-watchs for changes
+	-provides expression context
+	-nests & inhertis
+
+$Scope Nesting
+	- $scope(the root scope)
+ 		- $scope(nested scope)
+
+Iteration
+ 	- ng-repeat="item in items"
+
+Filters	
+ 	- ng-repeat="item in items | filter:query"
+ 	- there are also filteres for html manipulation
+ 	- {{item.count | number}}
+ 	- filter, limitTo, orderBy
+ 	- currency, date, number
+ 	- uppercase, lowercase
