@@ -40,4 +40,65 @@ Utility Attributes
 Tools for writing
 	- binding and templates
 	- controllers
-	
+
+Modules
+	- nicely isolated components
+	- neat easy structures for larger projects
+	- adds namespaces
+	- separate function & configuration
+	- provide libraries to pacgage specialised code
+	- creeate module:
+		angular.module('ModuldeName',['dependency1','dependecny2'])
+	- configure module
+		angular.module('ModuleName')
+			.controller('ProductsControler', function($scope){
+				$scope.products = product.query();
+			});
+
+	- custom filter
+		angular.module('ModuleName')
+			.filter('somename', function(){
+				return function(thing, arg){
+					// ...
+					return newThing;
+				};
+			});
+		{{item in items | somename:'name'}}
+
+Subcontrollers
+	-nested controllers
+	-separate controller inside existing more focused on specific part of code
+		.controller('ProductController', function($scope){
+			$
+		});
+
+Service Factories
+	- simplest way to provide service
+	- any service AngularJs doesn't care
+		anguler.moduler('ModuleName')
+			.factory('somename', function(){
+
+			});
+
+ngResource
+	- couple of api-s to reach to beackend and get data
+	- neat API for nandling REST APIs
+	- easy to use
+	- asynchronous
+		.factory('MailApi', function($resource){
+			return $resource(
+				'https://gmail.com/api/:email',
+				{fomat: 'JSON'},
+				{search :{
+					method: 'GET',
+					params: { folder: 'inbox'}
+					isArray: true,
+				}}
+			)
+		});
+
+		.controller('MailController', function(MailApi){
+			$scope.searchResult = MailApi.search({
+				name:'something'
+			});
+		});
