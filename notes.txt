@@ -31,9 +31,13 @@ Forms
 	- ng-valied / ng-invalid
 
 Utility Attributes
-- ng-model
-- ng-repeat
-- ng-controller
-- ng-hide & ng-show
-- ng-click & ng-mouse
-- ng-src
+	- ng-model
+	- ng-repeat
+	- ng-controller
+	- ng-hide & ng-show
+	- ng-click & ng-mouse
+	
+Tools for writing
+	- binding and templates
+	- controllers
+	
