@@ -1,4 +1,4 @@
-function Controller($scope) {
+function formController($scope) {
     $scope.data= {};
    
     $scope.update = function(user) {
