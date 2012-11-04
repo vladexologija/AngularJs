@@ -1,0 +1,16 @@
+ [
+    {"name": "Burrbery",
+     "price": 100},
+    {"name": "Aquascutum",
+     "price": 80},
+    {"name": "Henry Lloyd",
+     "price": 40},
+    {"name": "Fred Perry",
+     "price": 50},
+    {"name": "Jager",
+     "price": 50},
+    {"name": "Hackett",
+     "price": 70},
+    {"name": "Ben Sherman",
+     "price": 50}
+  ]

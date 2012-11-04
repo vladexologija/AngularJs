@@ -1,12 +1,7 @@
-function TieListCtrl($scope) {
-  $scope.ties = [
-    {"name": "Burrbery",
-     "price": 100},
-    {"name": "Aquascutum",
-     "price": 80},
-    {"name": "Ben Sherman",
-     "price": 50}
-  ];
+function TieListCtrl($scope, $http) {
+  $http.get('ties.json').success(function(data){
+  	$scope.ties = data;
+  });
 
   $scope.sort = 'name';
 }
