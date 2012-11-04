@@ -7,4 +7,6 @@ function TieListCtrl($scope) {
     {"name": "Ben Sherman",
      "price": 50}
   ];
+
+  $scope.sort = 'name';
 }

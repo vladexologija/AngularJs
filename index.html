@@ -4,16 +4,23 @@
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
     <script src="controllers.js"></script>
   </head>
-  <body>
+  <body ng-controller="TieListCtrl">
     <h1>Filter</h1>
     <div>
       Search:
       <input ng-model="query"/>
     </div>
-    <div ng-controller="TieListCtrl">
+    <div>
+      Sort by:
+      <select ng-model="sort">
+        <option value="name">Alphabetical</option>
+        <option value="price">Price</option>
+      </select>
+    </div>
+    <div>
       <p>Total number of phones: {{ties.length}}</p>
       <ul>
-        <li ng-repeat="tie in ties | filter:query">
+        <li ng-repeat="tie in ties | filter:query | orderBy:sort">
           {{tie.name}} <br/>
           <b>{{tie.price}}$</b>
         </li>
