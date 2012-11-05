@@ -22,7 +22,8 @@
       <ul>
         <li ng-repeat="tie in ties | filter:query | orderBy:sort">
           {{tie.name}} <br/>
-          <b>{{tie.price}}$</b>
+          <b>{{tie.price}}$</b> <br/>
+          <img ng-src="{{tie.imageUrl}}">
         </li>
       </ul>
     </div>
