@@ -5,3 +5,7 @@ function TieListCtrl($scope, $http) {
 
   $scope.sort = 'name';
 }
+
+function TieDetailCtrl($scope, $routeParams){
+	$scope.tieId = $routeParams.tieId;
+}

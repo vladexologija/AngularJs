@@ -1,23 +1,43 @@
  [
-    {"name": "Burrbery",
-     "imageUrl":"img/burberry.jpg",
-     "price": 100},
-    {"name": "Aquascutum",
-     "imageUrl":"img/aquascutum.jpg",
-     "price": 80},
-    {"name": "Henry Lloyd",
-     "imageUrl":"img/henrilloyd.jpg",
-     "price": 40},
-    {"name": "Fred Perry",
-     "imageUrl":"img/fredperry.jpg",
-     "price": 50},
-    {"name": "Jager",
-     "imageUrl":"img/jaeger.jpg",
-     "price": 50},
-    {"name": "Hackett",
-     "imageUrl":"img/hackett.jpg",
-     "price": 70},
-    {"name": "Ben Sherman",
-     "imageUrl":"img/bensherman.jpg",
-     "price": 50}
+    {
+        "id": 1,
+        "name": "Burrbery",
+        "imageUrl":"img/burberry.jpg",
+        "price": 100
+    },
+    {
+        "id": 2,   
+        "name": "Aquascutum",
+        "imageUrl":"img/aquascutum.jpg",
+        "price": 80
+    },
+    {
+        "id": 3,
+        "name": "Henry Lloyd",
+        "imageUrl":"img/henrilloyd.jpg",
+        "price": 40
+    },
+    {   
+        "id": 4,
+        "name": "Fred Perry",
+        "imageUrl":"img/fredperry.jpg",
+        "price": 50
+    },
+    {   
+        "id": 5,  
+        "name": "Jager",
+        "imageUrl":"img/jaeger.jpg",
+        "price": 50
+    },
+    {   
+        "id": 6,
+        "name": "Hackett",
+        "imageUrl":"img/hackett.jpg",
+        "price": 70},
+    {
+        "id": 7,
+        "name": "Ben Sherman",
+        "imageUrl":"img/bensherman.jpg",
+        "price": 50
+    }
   ]
